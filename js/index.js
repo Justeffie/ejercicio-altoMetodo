@@ -126,7 +126,7 @@ function resetResultsAndMessages() {
 
 
 function createErrorMessageFromService(message) {
-    const span = document.createElement("span")
+    const span = document.createElement((HTML_ELEMENTS.SPAN)
     span.innerText = message;
     document.getElementById(IDS.DIV_ERROR_SERVICE).append(span);
 }
