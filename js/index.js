@@ -18,6 +18,8 @@ function calcularMultiplicacion() {
     resultadoMultiplicacion.innerText.length > 18 && window.innerWidth <= 480 ?
         resultadoMultiplicacion.style.fontSize = STYLES.SMALL_FONT_SIZE :
         resultadoMultiplicacion.style.fontSize = STYLES.REGULAR_FONT_SIZE;
+
+    document.getElementById(IDS.DIV_RESULTADO_MULTIPLICACION).style.visibility = STYLES.VISIBILITY_VISIBLE
 }
 
 function isValueNumber(value) {
@@ -113,11 +115,11 @@ async function feriadosResultsOnChange($event) {
     const feriadosFiltered = filterFeriados(totalFeriados);
     setCantidadFeriados(feriadosFiltered.length);
     setDiasInamoviblesList(getFeriadosInamovibles(feriadosFiltered), anio);
-    document.getElementById(IDS.DIV_RESULTADOSFERIADOS).style.visibility = STYLES.VISIBILITY_FERIADOS_RESULT;
+    document.getElementById(IDS.DIV_RESULTADOSFERIADOS).style.visibility = STYLES.VISIBILITY_VISIBLE;
 }
 
 function resetResultsAndMessages() {
-    document.getElementById(IDS.DIV_RESULTADOSFERIADOS).style.visibility = STYLES.VISIBILITY_NO_RESULT;
+    document.getElementById(IDS.DIV_RESULTADOSFERIADOS).style.visibility = STYLES.VISIBILITY_HIDDEN;
     document.getElementById(IDS.UL_DIASINAMOVIBLES).innerText = "";
     document.getElementById(IDS.DIV_ERROR_SERVICE).innerText = "";
 }

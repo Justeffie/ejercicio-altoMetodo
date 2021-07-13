@@ -40,7 +40,8 @@ const IDS = {
     SPAN_CANTIDADFERIADOS: "cantidadFeriados",
     UL_DIASINAMOVIBLES: "diasInamovibles",
     FORM_FERIADOSFORM: "feriadosForm",
-    DIV_ERROR_SERVICE: "errorService"
+    DIV_ERROR_SERVICE: "errorService",
+    DIV_RESULTADO_MULTIPLICACION: "resultado"
 }
 
 const INPUTS = document.getElementsByTagName("input");
@@ -58,8 +59,8 @@ const STYLES = {
     ERR_MESSAGE_ALIGNMET: "center",
     INPUT_ERROR_STYLE: `2px solid ${COLORS.RED}`,
     INPUT_DEFAULT: "none",
-    VISIBILITY_FERIADOS_RESULT: "visible",
-    VISIBILITY_NO_RESULT: "hidden",
+    VISIBILITY_VISIBLE: "visible",
+    VISIBILITY_HIDDEN: "hidden",
     MARGIN_DIA_INAMOVIBLE: "5px 0"
 }
 

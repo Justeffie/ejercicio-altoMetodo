@@ -57,6 +57,7 @@ main {
 }
 
 #resultado {
+    visibility: hidden;
     display: flex;
     margin: 10px auto 18px auto;
 }
