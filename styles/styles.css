@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #8D2347;
+    color: white;
+}
+
+main, #multiplicacion, #multiplicacionForm {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+#multiplicacion, #multiplicacionForm {
+    justify-content: space-around;
+}
+
+main {
+    width: 100%;
+}
+
+#multiplicacion, #feriados {
+    margin: 30px auto 0 auto;
+    width: 90%;
+    background-color: #3C1532;
+    box-shadow: 3px 4px 15px -2px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+#feriados {
+    margin-bottom: 40px;
+}
+
+#multiplicacion {
+    height: 350px;
+
+}
+
+#multiplicacionForm {
+    height: 200px;
+}
+
+#x {
+    align-self: center;
+}
+
+#resultado, input[type=text], input[type=button] {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#resultado {
+    display: flex;
+    margin: 10px auto 18px auto;
+}
+
+#resultadoMultiplicacion {
+    margin-left: 10px;
+}
+
+input[type=text] {
+    border: none;
+    align-self: center;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.6);
+    background-color: #EAD7DD;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+input[type=button] {
+    background-color: #F2156A;
+    padding: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 3px 1px 30px 0 rgba(0,0,0,0.4),
+    inset 3px 1px 61px -11px rgba(0,0,0,.8);
+    border-radius: 4px;
+    transition: all .4s;
+    font-family: 'Istok Web', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+
+}
+
+input[type=button]:hover {
+    background-color: #FF478D;
+    transform: scale(1.05);
+}
+
+input[type=button]:disabled {
+    background-color: grey;
+    color: darkgrey;
+}
+
+#resultadosFeriados {
+    visibility: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#feriadosForm {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: center;
+}
+
+select {
+    border: none;
+    align-self: center;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.6);
+    background-color: #EAD7DD;
+    font-family: 'M PLUS 1p', sans-serif;
+    width: 70%;
+}
+
+#cantidadFeriadosContainer {
+    display: flex;
+    margin: 20px auto;
+}
+
+#cantidadFeriadosContainer > p, #inamovibles {
+    font-weight: bold;
+}
+
+#cantidadFeriados {
+    margin-left: 10px;
+}
+
+#inamovibles {
+    margin-bottom: 20px;
+}
+
+#errorService {
+    text-align: center;
+    color: #ff443e;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0 0 29px 0;
+}
+
+li {
+    margin: 10px 10px 10px 0;
+}
+
+
+@media (min-width: 700px) {
+    #resultado, input[type=text], input[type=button], select {
+        width: 50%;
+    }
+
+    #resultadosFeriados {
+        width: 80%;
+    }
+
+    #multiplicacion, #feriados {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #multiplicacion, #feriados {
+        width: 500px;
+    }
+}

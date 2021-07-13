@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="text/javascript" src="js/constans.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+</head>
+<body>
+    <main>
+        <section id="multiplicacion">
+            <h2>Multiplicación</h2>
+            <form id="multiplicacionForm">
+                <input type="text" name="multiplicando" tabindex="1" onkeyup="numerosOnChange(event)">
+                <div></div>
+                <span id="x">X</span>
+                <input type="text" name="multiplicador" tabindex="2" onkeyup="numerosOnChange(event)">
+                <div></div>
+                <input type="button" id="calcular" tabindex="3" onclick="calcularMultiplicacion()" value="Calcular" disabled>
+            </form>
+            <div id="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultadoMultiplicacion"></span>
+            </div>
+        </section>
+        <section id="feriados">
+            <h2>Feriados</h2>
+            <form id="feriadosForm">
+                <label for="anios">Selecciona una fecha:</label>
+                <select tabindex="4" name="anios" id="anios" onchange="feriadosResultsOnChange(event)"></select>
+                <div id="errorService"></div>
+            </form>
+            <div id="resultadosFeriados">
+                <div id="cantidadFeriadosContainer">
+                    <p>Cantidad de feriados:</p>
+                    <span id="cantidadFeriados"></span>
+                </div>
+                <div>
+                    <p id="inamovibles">Inamovibles:</p>
+                    <ul id="diasInamovibles"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
