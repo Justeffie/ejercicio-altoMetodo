@@ -74,7 +74,7 @@ input[type=text] {
     border-radius: 5px;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.6);
     background-color: #EAD7DD;
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: sans-serif;
 }
 
 input[type=button] {
@@ -87,7 +87,7 @@ input[type=button] {
     inset 3px 1px 61px -11px rgba(0,0,0,.8);
     border-radius: 4px;
     transition: all .4s;
-    font-family: 'Istok Web', sans-serif;
+    font-family: sans-serif;
     color: white;
     text-shadow: 1px 1px 1px #000;
 
@@ -126,7 +126,7 @@ select {
     border-radius: 5px;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.6);
     background-color: #EAD7DD;
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: sans-serif;
     width: 70%;
 }
 
