@@ -4,7 +4,7 @@ const TIPO_FERIADO = {
     TRASLADABLE: "trasladable"
 };
 
-const ANIOS = getAnios(2011, 2031);
+const ANIOS = getAnios(2009, 2031);
 
 const COLORS = {
     RED: "#ff443e",
